@@ -57,7 +57,7 @@ public:
 		PutPixel( x,y,{ unsigned char( r ),unsigned char( g ),unsigned char( x0 ) } );
 	}
 	void PutPixel( int x,int y,Color c );
-	void draw_square(square s); // Pass by value to solve the bug.
+	void draw_square(square& s); // Pass by value to solve the bug.
 	void testNswap(int& num1, int& num2);
 	~Graphics();
 private:

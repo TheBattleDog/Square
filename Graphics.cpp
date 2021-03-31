@@ -324,7 +324,7 @@ void Graphics::testNswap(int& num1, int& num2)
 	}
 }
 
-void Graphics::draw_square(square s)
+void Graphics::draw_square(square& s) // Pass by value to solve the bug.
 {
 	testNswap(s.x0, s.x1);
 	testNswap(s.y0, s.y1);
